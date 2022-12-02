@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Predict one Car </title>
+    </head>
+    <body>
+        <ol>text</ol>
+    </body>
+</html>
+
+
+
+
+
+<html>
+    <head>
+        <title>Car price predictor</title>
+    </head>
+    <body>
+        <h2>{{ message }}</h2>
+        <p> <h3>Upload data for predict </h3></p>
+        <p> Upload List of Cars </p>
+        <form action="/predict_items" method="post" enctype="multipart/form-data">
+            <input type="file" name="list_of_cars"> <br><br>
+            <button type="submit">Upload list of Cars</button>
+        <p> Or</p>
+
+            <p> Upload parameters for one Car <a href="/item"> Upload </a> </p><br><br>
+
+<!--        <form action="/predict_item" method="post" enctype="multipart/form-data">-->
+<!--            Enter parameters: <br>-->
+<!--            <input type="text" name="name"> <br>-->
+<!--            <button type="submit">Upload Car's parameters</button>-->
+<!--            <p><h3> Or</h3></p>-->
+        <h3> Or</h3>
+        <p> Get List of predicted Cars <a href="/get_items"> List of Cars </a> </p>
+        <p> Get one predicted Car <a href="/get_item"> One Car </a> </p>
+    </body>
+</html>

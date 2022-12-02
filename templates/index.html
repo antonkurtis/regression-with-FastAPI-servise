@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Car price predictor</title>
+    </head>
+    <body>
+        <h2>{{ message }}</h2>
+        <p> <h3>Upload data for predict </h3></p>
+        <p> Upload List of Cars </p>
+        <form action="/predict_items" method="post" enctype="multipart/form-data">
+            Enter the name of file: <br>
+            <input type="text" name="name"> <br>
+            Attach a file: <br>
+            <input type="file" name="car_file"> <br><br>
+            <button type="submit">Upload List of Cars</button>
+        </form><br><br><br>
+        <p> Upload Parameters of one Car</p>
+
+        <form action="/predict_item" method="post" enctype="multipart/form-data">
+            Enter parameters of Car: <br>
+            name: <br>
+            <input type="text" name="name"> <br>
+            year: <br>
+            <input type="text" name="year"> <br>
+            selling_price: <br>
+            <input type="text" name="selling_price"> <br>
+            km_driven: <br>
+            <input type="text" name="km_driven"> <br>
+            fuel: <br>
+            <input type="text" name="fuel"> <br>
+            seller_type: <br>
+            <input type="text" name="seller_type"> <br>
+            transmission: <br>
+            <input type="text" name="transmission"> <br>
+            owner: <br>
+            <input type="text" name="owner"> <br>
+            mileage: <br>
+            <input type="text" name="mileage"> <br>
+            engine: <br>
+            <input type="text" name="engine"> <br>
+            max_power: <br>
+            <input type="text" name="max_power"> <br>
+            torque: <br>
+            <input type="text" name="torque"> <br>
+            seats: <br>
+            <input type="text" name="seats"> <br>
+            <button type="submit">Upload Car's parameters</button>
+            </form>
+            <p><h3> Or</h3></p>
+
+
+        <p> Get List of predicted Cars <a href="/get_items"> List of Cars </a> </p>
+        <p> Get one predicted Car <a href="/get_item"> One Car </a> </p>
+    </body>
+</html>
